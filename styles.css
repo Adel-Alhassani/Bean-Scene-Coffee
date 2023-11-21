@@ -1,0 +1,711 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* *********************************** */
+
+html {
+    box-sizing: border-box;
+}
+
+.parent {
+    background-color: #ffffff;
+}
+
+button {
+    border: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    background-color: #F9C06A;
+    border-radius: 1.8em;
+    padding: 13px 25px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: #d39c49;
+    cursor: pointer;
+}
+
+.logo {
+    font-family: 'Clicker Script', cursive;
+    color: white;
+    text-decoration: none;
+    font-size: 45px;
+}
+
+.headerContainer {
+    width: 100%;
+    background: linear-gradient(90deg, #1E1E1E -6.88%, rgba(0, 0, 0, 0.00) 87.45%), url(imgs/coffee_image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 180px;
+}
+
+header {
+    width: 80%;
+    margin: auto;
+    padding-top: 20px;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    margin: auto;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 200px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+header nav a:hover {
+    color: #d39c49;
+}
+
+header nav .links {
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+header nav .links a {
+    margin: 0 35px;
+}
+
+header nav .signin #signinLink {
+    text-decoration: underline;
+}
+
+header nav .signin #signInBtn {
+    background-color: #F9C06A;
+    border-radius: 1.8em;
+    padding: 13px 20px;
+    margin-left: 15px;
+}
+
+header .content {
+    width: 500px;
+    font-size: 20px;
+}
+
+header .content span {
+    display: inline-block;
+    margin-bottom: 80px;
+}
+
+header .content h1 {
+    font-family: 'Clicker Script', cursive;
+    font-size: 200px;
+    margin-bottom: 80px;
+}
+
+header .content p {
+    line-height: 35px;
+    margin-bottom: 30px;
+}
+
+header .content button {
+    margin-bottom: 150px;
+}
+
+main .titles {
+    font-weight: bold;
+    font-size: 55px;
+    color: #603809;
+    margin-bottom: 30px;
+}
+
+main #descoverContainer {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
+    column-gap: 100px;
+}
+
+main #descoverContainer #discoverContent {
+    padding-top: 80px;
+}
+
+
+main #descoverContainer #discoverContent p {
+    font-size: 22px;
+    color: #707070;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+main .productParent {
+    width: 100%;
+    background: url(imgs/coffee_blast.png), url(imgs/coffee_blast-1.png);
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+    padding-bottom: 180px;
+}
+
+main #productsContainer {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    padding-top: 220px;
+}
+
+main #productsContainer .desc {
+    display: inline-block;
+    font-size: 20px;
+    color: #707070;
+    margin-bottom: 35px;
+}
+
+main #productsContainer #productsList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+}
+
+main #productsContainer #productsList .product {
+    border: 1px solid rgba(249, 192, 106, 0.42);
+    background: #FFF9F1;
+    position: relative;
+}
+
+main #productsContainer #productsList .product img {
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+}
+
+main #productsContainer #productsList .product .names {
+    display: block;
+    font-size: 22px;
+    color: #603809;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+main #productsContainer #productsList .product .recipe {
+    display: block;
+    color: black;
+    margin-bottom: 15px;
+}
+
+main #productsContainer #productsList .product .price {
+    display: block;
+    color: #603809;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+main #productsContainer #productsList .product .order {
+    padding: 13px 20px;
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+
+main #featuresContainer {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 100px;
+}
+
+main #featuresContainer .featureDesc {
+    display: inline-block;
+    font-size: 20px;
+    color: #707070;
+    margin-bottom: 35px;
+}
+
+main #featuresContainer #featuresList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+}
+
+main #featuresContainer #featuresList .feature {
+    background: #FFEED8;
+    padding: 5px 30px;
+}
+
+main #featuresContainer #featuresList .feature img {
+    margin: 25px auto;
+    display: block;
+}
+
+main #featuresContainer #featuresList .feature .featureTitle {
+    display: block;
+    font-size: 25px;
+    color: #603809;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+main #featuresContainer #featuresList .feature .featureDesc {
+    display: block;
+    font-size: 18px;
+    line-height: 25px;
+    color: #707070;
+    margin-bottom: 30px;
+}
+
+main #featuresContainer .getStartedDesc {
+    display: inline-block;
+    font-size: 20px;
+    color: #707070;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+main #featuresContainer #getStarted {
+    display: block;
+    font-size: 25px;
+    color: #603809;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+main #featuresContainer #joinUs {
+    padding: 13px 40px;
+}
+
+main #coffeParent {
+    width: 100%;
+    background: url(imgs/Bean\ Scene\ Coffee.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main .coffeOrderContainer {
+    width: 80%;
+    margin: auto;
+    padding-top: 170px;
+    padding-bottom: 200px;
+    margin-bottom: 85px;
+}
+
+main #coffeOrder {
+    width: 640px;
+    font-family: 'Playfair Display', serif;
+}
+
+main #coffeOrder .title {
+    color: white;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 85px;
+    margin-bottom: 50px;
+}
+
+main #coffeOrder .desc {
+    color: white;
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 25px;
+}
+
+main .feedbackParent {
+    width: 100%;
+    background: url(imgs/coffee_blast_upside_down.png), url(imgs/coffee_blast-1.png);
+    background-repeat: no-repeat;
+    background-position: bottom left, top right;
+    z-index: 1;
+    position: relative;
+}
+
+main #feedbackContainer {
+    position: relative;
+    z-index: 2;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 220px;
+}
+
+main #feedbackContainer .title {
+    display: block;
+    font-size: 55px;
+    color: #603809;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+main #feedbackContainer .desc {
+    font-size: 20px;
+    color: #707070;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+main #feedbackContainer #feedbackContent {
+    margin: auto;
+    width: 80%;
+    border: 1px solid rgba(249, 192, 106, 0.42);
+    background: #FFF9F1;
+    position: relative;
+}
+
+main #feedbackContainer #feedbackContent .commaContainer {
+    width: 100%;
+    text-align: left;
+    padding-top: 35px;
+    padding-left: 30px;
+}
+
+main #feedbackContainer #feedbackContent .feedback {
+    margin-top: 20px;
+    padding-left: 95px;
+    padding-right: 95px;
+    line-height: 30px;
+    color: #707070;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+
+main #feedbackContainer #feedbackContent .feedbackName {
+    display: block;
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #603809;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+main #feedbackContainer #feedbackContent .feedbackSpecialty {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #707070;
+    font-weight: 500;
+    margin-bottom: 105px;
+}
+
+main #feedbackContainer #feedbackContent .arrows {
+    background: none;
+    padding: 0;
+    border-radius: 0;
+}
+
+
+main #feedbackContainer #feedbackContent .leftArrow {
+    position: absolute;
+    top: 50%;
+    left: -50px;
+    transform: translateY(-50%);
+    transition: 0.5s;
+}
+
+
+main #feedbackContainer #feedbackContent .rightArrow {
+    position: absolute;
+    top: 50%;
+    right: -50px;
+    transform: translateY(-50%);
+}
+
+main #feedbackContainer #feedbackContent .feedbackImage {
+    position: absolute;
+    bottom: -75px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+main .subscribeParent {
+    width: 100%;
+    background: url(imgs/pngwing\ 1.png),
+        url(imgs/pngwing\ 2.png), url(imgs/subscribe.png);
+    background-size: contain, contain, cover;
+    background-repeat: no-repeat;
+    background-position: left, right, center;
+
+}
+
+main #subscribeContainer {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+main #subscribeContainer .title {
+    display: block;
+    font-size: 55px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+main #subscribeContainer .desc {
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: lighter;
+    margin-bottom: 30px;
+}
+
+main #emailContainer {
+    margin: auto;
+    display: flex;
+    height: 50px;
+    width: fit-content;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+main #subscribeContainer #emailContainer .email {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    width: 450px;
+    border: none;
+
+
+}
+
+main #subscribeContainer #emailContainer .email::placeholder {
+    color: rgba(0, 0, 0, 0.34);
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+main #subscribeContainer #emailContainer .subscribeBtn {
+    border-radius: 0px;
+    color: #603809;
+    font-size: 18px;
+}
+
+.footerParent {
+    width: 100%;
+    background: url(imgs/footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footerContainer {
+    width: 80%;
+    margin: auto;
+    font-family: 'Playfair Display', serif;
+    display: grid;
+    grid-template-columns: 30% 20% 20% 30%;
+    column-gap: 10px;
+    padding-top: 180px;
+    padding-bottom: 50px;
+}
+
+.footerContainer .logo {
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.footerContainer .titles {
+    display: block;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-weight: 500;
+    margin-bottom: 60px;
+}
+
+.footerContainer .desc {
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+.footerContainer .links {
+    display: block;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: lighter;
+    margin-bottom: 30px;
+}
+
+.footerContainer .BeanSceneContainer,
+.aboutContainer,
+.companyContainer,
+.ContactUsContainer {
+    padding: 0 10px;
+}
+
+/* @media (max-width: 360px) {
+    .parent {
+
+        background: url("/imgs/bean_scene_coffee_landingpage.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .container {
+        width: 360px;
+        margin: 0 auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    main #productsContainer #productsList {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 50px;
+        column-gap: 20px;
+    }
+
+
+} */
